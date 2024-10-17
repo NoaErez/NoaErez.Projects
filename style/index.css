@@ -1,5 +1,66 @@
+/* colors:
+rgb(244, 244, 229) - cream 
+rgb(229, 203, 255) - light purple 
+rgb(132, 69, 196) - dark purple
+ */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(244, 244, 229);
+    color: rgb(132, 69, 196);
+    direction: rtl;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(132, 69, 196);
+}
+
+
+.top {
+    background-color: rgb(244, 244, 229);
+    position: sticky;
+    top: 0%;
+    height: 30px;
+    font: normal normal 900 10px/30px Varela Round;
+    display: flex;
+    direction: rtl;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+
+#opening, #about  {
+    background-color: rgb(229, 203, 255);
+    height: 300px;
+    margin-bottom: 5px;
+    text-align: center;
+    font: normal normal 900 10px/30px Varela Round;
+}
+
+#gallery{
+    background-color: rgb(229, 203, 255);
+    height: 700px;
+    margin-bottom: 5px;
+    text-align: center;
+    font: normal normal 900 10px/118px Varela Round;
+
+}
+
+#contacts {
+    background-color: rgb(229, 203, 255);
+    height: 300px;
+    margin-bottom: 5px;
+    text-align: center;
+    font: normal normal 900 10px/118px Varela Round;
 }
