@@ -12,9 +12,11 @@ rgb(132, 69, 196) - dark purple
 
 html {
     scroll-behavior: smooth;
-    background-color: rgb(244, 244, 229);
-    color: rgb(132, 69, 196);
     direction: rtl;
+}
+
+body {
+    background-color: rgb(229, 203, 255)
 }
 
 a {
@@ -36,31 +38,114 @@ a:visited {
     direction: rtl;
     gap: 20px;
     justify-content: center;
+    z-index: 2;
 
 }
 
-
-#opening, #about  {
-    background-color: rgb(229, 203, 255);
-    height: 300px;
+#opening {
+    height: 100px;
     margin-bottom: 5px;
     text-align: center;
+    margin-top: 30px;
     font: normal normal 900 10px/30px Varela Round;
 }
 
-#gallery{
-    background-color: rgb(229, 203, 255);
-    height: 700px;
-    margin-bottom: 5px;
+.tech {
+    background-color: rgb(244, 244, 229);
+    height: 30px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 30px;
+}
+
+.tech>img {
+    width: 50px;
+}
+
+#gallery {
+    height: 750px;
     text-align: center;
     font: normal normal 900 10px/118px Varela Round;
 
 }
 
-#contacts {
-    background-color: rgb(229, 203, 255);
+.projects {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card{
+    box-shadow: 5px 5px 15px rgb(132, 69, 196)
+}
+
+.card:hover{
+    transform: scale(1.05); 
+    transition:all 0.5s;
+}
+
+#about {
     height: 300px;
     margin-bottom: 5px;
     text-align: center;
     font: normal normal 900 10px/118px Varela Round;
+}
+
+#contacts {
+    height: 300px;
+    margin-bottom: 5px;
+    text-align: center;
+    font: normal normal 900 10px/118px Varela Round;
+}
+
+.credit{
+    background-color: rgb(244, 244, 229);
+    color: rgb(132, 69, 196);
+    height: 30px;
+    display: flex;
+    font: normal normal 500 12px/30px Varela Round;
+    justify-content: space-between; 
+}
+
+.container{
+    height: 410px;
+    display: block;
+   
+}
+
+.pic>img{
+    width: 50%;
+    margin-top: 60px;
+    margin-right: 25%;   
+    box-shadow: 5px 5px 15px rgb(132, 69, 196);
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#bt{
+    height: 30px;
+    width: 100px;
+    margin-bottom: 20px;
+    border: transparent;
+    border-radius: 15px;
+    background-color: rgb(244, 244, 229);
+    color: rgb(132, 69, 196);
+    font: normal normal 900 10px/30px Varela Round;
+    text-align: center;
+    box-shadow: 5px 5px 10px;
+}
+
+#bt:hover{
+    transform: scale(1.2);
+    transition:all 0.5s;
+}
+
+.btn:hover{
+    color: rgb(132, 69, 196);
 }
