@@ -20,6 +20,7 @@ body {
 }
 
 a {
+    color: rgb(132, 69, 196);
     text-decoration: none;
 }
 
@@ -145,6 +146,11 @@ a:visited {
     transform: scale(1.2);
     transition:all 0.5s;
 }
+
+.btn{
+    color: rgb(132, 69, 196);
+}
+
 
 .btn:hover{
     color: rgb(132, 69, 196);
