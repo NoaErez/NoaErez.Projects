@@ -1,7 +1,7 @@
 /* colors:
-rgb(244, 244, 229) - cream 
-rgb(229, 203, 255) - light purple 
-rgb(132, 69, 196) - dark purple
+#f4f4e5 - cream 
+#e5cbff - light purple 
+#5f2e90 - dark purple
  */
 
 * {
@@ -10,31 +10,36 @@ rgb(132, 69, 196) - dark purple
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
     scroll-behavior: smooth;
     direction: rtl;
-}
-
-body {
-    background-color: rgb(229, 203, 255)
+    background-color: #e5cbff
 }
 
 a {
-    color: rgb(132, 69, 196);
+    color: #5f2e90;
     text-decoration: none;
 }
 
 a:visited {
-    color: rgb(132, 69, 196);
+    color: #5f2e90;
 }
 
+.bg-primary-subtle {
+    background-color: #f4f4e55c !important;
+}
+
+.btn-outline-light {
+    background-color: #f4f4e5b1 !important;
+}
 
 .top {
-    background-color: rgb(244, 244, 229);
+    background-color: #f4f4e5;
     position: sticky;
     top: 0%;
     height: 30px;
-    font: normal normal 900 10px/30px Varela Round;
+    font: normal normal  10px/30px Varela Round;
     display: flex;
     direction: rtl;
     gap: 20px;
@@ -44,18 +49,21 @@ a:visited {
 }
 
 #opening {
-    height: 100px;
-    margin-bottom: 5px;
+    height: 80px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     text-align: center;
     margin-top: 30px;
-    font: normal normal 900 10px/30px Varela Round;
+    scroll-margin-top: 70px;
+    font: normal normal  10px/30px Varela Round;
+    color: #5f2e90;
 }
 
 .tech {
-    background-color: rgb(244, 244, 229);
+    background-color: #f4f4e5;
     height: 30px;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     gap: 30px;
 }
@@ -64,94 +72,138 @@ a:visited {
     width: 50px;
 }
 
+#about {
+    height: 300px;
+    text-align: center;
+    font: normal normal 10px/118px Varela Round;
+    color: #5f2e90;
+    margin-bottom: 25px;
+}
+
 #gallery {
     height: 750px;
+    margin-bottom: 25px;
     text-align: center;
-    font: normal normal 900 10px/118px Varela Round;
+    font: normal normal 10px/118px Varela Round;
+    color: #5f2e90;
+    scroll-margin-top: 40px;
 
 }
 
 .projects {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
+    margin: auto;
     margin-top: 30px;
+    width: 80%;
 }
 
-.card{
-    box-shadow: 5px 5px 15px rgb(132, 69, 196)
+.card {
+    margin-top: -15px;
+    box-shadow: 5px 5px 15px #8445c4;
 }
 
-.card:hover{
-    transform: scale(1.05); 
-    transition:all 0.5s;
-}
-
-#about {
-    height: 300px;
-    margin-bottom: 5px;
-    text-align: center;
-    font: normal normal 900 10px/118px Varela Round;
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.5s;
 }
 
 #contacts {
-    height: 300px;
-    margin-bottom: 5px;
+    height: 350px;
     text-align: center;
-    font: normal normal 900 10px/118px Varela Round;
+    font: normal normal 10px/22px Varela Round;
+    color: #5f2e90;
+
 }
 
-.credit{
-    background-color: rgb(244, 244, 229);
-    color: rgb(132, 69, 196);
+.container-form {
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4e55c;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px #8445c4;
+    width: 60%;
+    height: 320px;
+    margin: auto;
+    padding: 30px;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input>input,
+textarea {    
+    margin-bottom: 12px;
+    border: 0.1px solid #ffffffd5;
+    border-radius: 5px;
+    background-color: #f4f4e5b1;
+    text-align: center;
+    box-shadow: 1px 2px 20px -10px black;
+}
+
+#sub {
+    font: normal normal 13px/25px Varela Round;
+    color: #5f2e90;
+    margin-bottom: 12px;
+    border: 0.1px solid #ffffffd5;
+    border-radius: 5px;
+    background-color: #f4f4e5b1;
+    text-align: center;
+    box-shadow: 1px 2px 20px -10px black;
+    width: 30%;
+    margin: auto;
+}
+
+.credit {
+    background-color: #f4f4e5;
+    color: #5f2e90;
     height: 30px;
     display: flex;
     font: normal normal 500 12px/30px Varela Round;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
-.container{
+.container {
     height: 410px;
     display: block;
-   
+
 }
 
-.pic>img{
+.pic>img {
     width: 50%;
     margin-top: 60px;
-    margin-right: 25%;   
-    box-shadow: 5px 5px 15px rgb(132, 69, 196);
+    margin-right: 25%;
+    box-shadow: 5px 5px 15px #8445c4;
 }
 
-.buttons{
+.buttons {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-#bt{
+#bt {
     height: 30px;
     width: 100px;
     margin-bottom: 20px;
-    border: transparent;
-    border-radius: 15px;
-    background-color: rgb(244, 244, 229);
-    color: rgb(132, 69, 196);
-    font: normal normal 900 10px/30px Varela Round;
+    border: 0.1px solid #ffffffd5;
+    border-radius: 5px;
+    background-color: #f4f4e5e1;
+    color: #5f2e90;
+    font: normal normal 10px/30px Varela Round;
     text-align: center;
-    box-shadow: 5px 5px 10px;
+    box-shadow: 2px 3px 10px;
 }
 
-#bt:hover{
-    transform: scale(1.2);
-    transition:all 0.5s;
-}
-
-.btn{
-    color: rgb(132, 69, 196);
-}
-
-
-.btn:hover{
-    color: rgb(132, 69, 196);
+#bt:hover,
+#sub:hover,
+.btn:active,
+.btn:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+    color: #8445c4 !important;
 }
