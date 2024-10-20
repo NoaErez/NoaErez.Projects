@@ -22,9 +22,9 @@ a {
     text-decoration: none;
 }
 
-a:visited {
+/* a:visited {
     color: #5f2e90;
-}
+} */
 
 .bg-primary-subtle {
     background-color: #f4f4e55c !important;
@@ -32,14 +32,24 @@ a:visited {
 
 .btn-outline-light {
     background-color: #f4f4e5b1 !important;
+    color: #5f2e9081;
 }
 
+.web{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.anchor{
+    flex-grow: 1;
+}
 .top {
     background-color: #f4f4e5;
     position: sticky;
     top: 0%;
     height: 30px;
-    font: normal normal  10px/30px Varela Round;
+    font: normal normal 12px/30px Varela Round;
     display: flex;
     direction: rtl;
     gap: 20px;
@@ -55,7 +65,7 @@ a:visited {
     text-align: center;
     margin-top: 30px;
     scroll-margin-top: 70px;
-    font: normal normal  10px/30px Varela Round;
+    font: normal normal 10px/30px Varela Round;
     color: #5f2e90;
 }
 
@@ -75,19 +85,37 @@ a:visited {
 #about {
     height: 300px;
     text-align: center;
-    font: normal normal 10px/118px Varela Round;
     color: #5f2e90;
-    margin-bottom: 25px;
+    margin-top: 25px;
+    scroll-margin-top: 40px;
 }
 
+.abt>h2{
+    font: normal normal 25px/50px Varela Round;
+}
+
+.abt>p {
+    font: normal normal 12px/20px Varela Round;
+    width: 50%;
+    margin: auto;
+}
+
+.abt>button{
+    width: 80px !important;
+}
+
+
 #gallery {
-    height: 750px;
+    height: 650px;
     margin-bottom: 25px;
     text-align: center;
-    font: normal normal 10px/118px Varela Round;
     color: #5f2e90;
     scroll-margin-top: 40px;
 
+}
+
+.gall>h2 {
+    font: normal normal 25px/50px Varela Round;
 }
 
 .projects {
@@ -105,15 +133,10 @@ a:visited {
     box-shadow: 5px 5px 15px #8445c4;
 }
 
-.card:hover {
-    transform: scale(1.05);
-    transition: all 0.5s;
-}
 
 #contacts {
-    height: 350px;
     text-align: center;
-    font: normal normal 10px/22px Varela Round;
+    font: normal normal 12px/22px Varela Round;
     color: #5f2e90;
 
 }
@@ -128,6 +151,7 @@ a:visited {
     height: 320px;
     margin: auto;
     padding: 30px;
+    margin-bottom: 50px;
 }
 
 .form-input {
@@ -136,7 +160,7 @@ a:visited {
 }
 
 .form-input>input,
-textarea {    
+textarea {
     margin-bottom: 12px;
     border: 0.1px solid #ffffffd5;
     border-radius: 5px;
@@ -163,8 +187,16 @@ textarea {
     color: #5f2e90;
     height: 30px;
     display: flex;
-    font: normal normal 500 12px/30px Varela Round;
+    font: normal normal 12px/30px Varela Round;
     justify-content: space-between;
+    
+}
+
+.links{
+    margin-left: 11%;
+}
+.links a {
+    margin-right: 90px;
 }
 
 .container {
@@ -192,11 +224,17 @@ textarea {
     margin-bottom: 20px;
     border: 0.1px solid #ffffffd5;
     border-radius: 5px;
-    background-color: #f4f4e5e1;
-    color: #5f2e90;
+    background-color: #f4f4e5b1 !important;
+    color: #8445c4;
     font: normal normal 10px/30px Varela Round;
     text-align: center;
     box-shadow: 2px 3px 10px;
+}
+
+#bt,
+#sub,
+.btn{
+    transition: transform 0.5s ease-out;
 }
 
 #bt:hover,
@@ -205,5 +243,21 @@ textarea {
 .btn:hover {
     transform: scale(1.1);
     transition: all 0.5s;
-    color: #8445c4 !important;
+    color: #5f2e90 !important;
+}
+
+img,
+.card{
+    transition: transform 0.5s ease-out;
+}
+
+img:hover,
+.card:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+
+.card>img:hover{
+    transform: none;
 }
