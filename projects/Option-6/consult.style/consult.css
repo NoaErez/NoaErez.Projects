@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-primary-subtle {
+    background-color: #e5eeff !important;
+}
+
+.text-dark {
+    color: #020253 !important;
+}
+
+html {
+    direction: rtl;
+    max-height: 1920px;
+    max-width: 1080px;
+}
+
+body {
+    max-height: 1265px;
+}
+
+.sticky-top {
+    width: 20%;
+    height: 10px;
+}
+
+.phone {
+    width: 310px;
+}
+
+.phone>img {
+    width: 310px;
+    margin-right: 60px;
+
+}
+
+.form {
+    margin-right: 40%;
+    margin-top: -410px;
+    width: 60%;
+}
+
+.form>h1 {
+    text-align: right;
+    font: 36px/57px Heebo;
+}
+
+.form>p {
+    text-align: right;
+    font: 12px/17px Heebo;
+    width: 35%;
+}
+
+.form>button {
+    font: bold 12px/12px Heebo;
+    width: 12%;
+}
+
+label {
+    text-align: right;
+    font: bold 10px/4px Heebo;
+}
+
+form {
+    gap: 10px;
+    width: 100%;
+}
+
+.border-bottom {
+    border-bottom-width: 3px !important;
+}
+
+
+.social-bottom>button,
+.wa-top>button {
+    width: 45px;
+    height: 45px;
+}
+
+.wa-top {
+    margin-right: 110%;
+    margin-top: 5vh;
+}
+
+.wa-top>button>img {
+    width: 26px;
+    margin-right: -4px !important;
+}
+
+
+.social-bottom {
+    position: absolute;
+    width: 23%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 75%;
+
+}
+
+button>img {
+    margin-bottom: 3px;
+    margin-left: 1px;
+    width: 17px;
+}
+
+.bottom {
+    margin-top: 20vh;
+    width: 50%;
+    height: 10px;
+    margin-right: 724px;
+}

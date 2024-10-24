@@ -10,8 +10,16 @@
     box-sizing: border-box;
 }
 
+.bg-primary-subtle {
+    background-color: #f4f4e55c !important;
+}
+
+.btn-outline-light {
+    background-color: #f4f4e5b1 !important;
+    color: #5f2e9081;
+}
 html,
-body {
+body{
     scroll-behavior: smooth;
     direction: rtl;
     background-color: #e5cbff
@@ -20,15 +28,6 @@ body {
 a {
     color: #5f2e90;
     text-decoration: none;
-}
-
-.bg-primary-subtle {
-    background-color: #f4f4e55c !important;
-}
-
-.btn-outline-light {
-    background-color: #f4f4e5b1 !important;
-    color: #5f2e9081;
 }
 
 .web{
