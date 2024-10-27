@@ -18,10 +18,6 @@ html {
     max-width: 1080px;
 }
 
-body {
-    max-height: 1265px;
-}
-
 .sticky-top {
     width: 20%;
     height: 10px;
@@ -52,6 +48,11 @@ body {
     text-align: right;
     font: 12px/17px Heebo;
     width: 35%;
+}
+
+#email,
+#name {
+    width: 319px;
 }
 
 .form>button {
@@ -98,6 +99,7 @@ form {
     justify-content: space-around;
     margin-right: 75%;
 
+
 }
 
 button>img {
@@ -107,8 +109,109 @@ button>img {
 }
 
 .bottom {
-    margin-top: 20vh;
+    position: absolute;
+    left: 0;
+    margin-top: 17vh;
     width: 50%;
     height: 10px;
-    margin-right: 724px;
+}
+
+@media (max-width: 768px) {
+
+    html {
+        overflow: hidden;
+        margin: 0;
+        height: 100%;
+    }
+
+    body {
+        margin: 10px;
+        height: 100%;
+
+    }
+
+    .wa-top {
+        display: none;
+    }
+
+    .sticky-top {
+        height: 10px;
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .phone>img {
+        width: 20%;
+        height: auto;
+        margin-right: 140px;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+
+    form {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .form {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: right;
+    }
+
+    .f-con {
+        margin: auto;
+        width: 100% !important;
+    }
+
+    #email,
+    #name {
+        margin-left: 200px !important;
+        width: 100% !important;
+    }
+
+    #name2 {
+        margin: auto;
+        height: 80px;
+    }
+
+    .form>h1 {
+        font-size: 34px;
+        text-align: center;
+
+    }
+
+    .form>p {
+        width: 70%;
+        margin: auto;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .form>button {
+        align-items: center;
+        text-align: center;
+        font: bold 15px/12px Heebo;
+        height: 40px;
+        width: 100%;
+    }
+
+    .social-bottom {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        left: 0;
+    }
+
+    .bottom {
+        width: 100%;
+        height: 10px;
+
+    }
 }
