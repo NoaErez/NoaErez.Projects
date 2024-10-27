@@ -18,8 +18,11 @@
     background-color: #f4f4e5b1 !important;
     color: #5f2e9081;
 }
+
+
+
 html,
-body{
+body {
     scroll-behavior: smooth;
     direction: rtl;
     background-color: #e5cbff
@@ -30,15 +33,16 @@ a {
     text-decoration: none;
 }
 
-.web{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; 
+.navbar {
+    display: none;
 }
 
-.anchor{
-    flex-grow: 1;
+.web {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
 .top {
     background-color: #f4f4e5;
     position: sticky;
@@ -78,14 +82,14 @@ a {
 }
 
 #about {
-    height: 300px;
+    height: auto;
     text-align: center;
     color: #5f2e90;
     margin-top: 25px;
     scroll-margin-top: 40px;
 }
 
-.abt>h2{
+.abt>h2 {
     font: normal normal 25px/50px Varela Round;
 }
 
@@ -95,13 +99,13 @@ a {
     margin: auto;
 }
 
-.abt>button{
+.abt>button {
     width: 80px !important;
 }
 
 
 #gallery {
-    height: 650px;
+    height: auto;
     margin-bottom: 25px;
     text-align: center;
     color: #5f2e90;
@@ -143,7 +147,7 @@ a {
     border-radius: 5px;
     box-shadow: 5px 5px 15px #8445c4;
     width: 60%;
-    height: 320px;
+    height: auto;
     margin: auto;
     padding: 30px;
     margin-bottom: 50px;
@@ -184,12 +188,13 @@ textarea {
     display: flex;
     font: normal normal 12px/30px Varela Round;
     justify-content: space-between;
-    
+
 }
 
-.links{
+.links {
     margin-left: 11%;
 }
+
 .links a {
     margin-right: 90px;
 }
@@ -228,7 +233,7 @@ textarea {
 
 #bt,
 #sub,
-.btn{
+.btn {
     transition: transform 0.5s ease-out;
 }
 
@@ -242,17 +247,78 @@ textarea {
 }
 
 img,
-.card{
+.card {
     transition: transform 0.5s ease-out;
 }
 
 img:hover,
-.card:hover{
+.card:hover {
     transform: scale(1.05);
     transition: all 0.5s;
 }
 
 
-.card>img:hover{
+.card>img:hover {
     transform: none;
+}
+
+
+@media (max-width: 768px) {
+
+    .bg-success-subtle {
+        background-color: #f4f5eac6 !important;
+
+    }
+
+    .top {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        height: auto;
+        justify-content: center;
+    }
+
+
+    .navbar {
+        display: flex; 
+
+    }
+
+    .navbar-brand>img {
+        width: 80px;
+    }
+
+    .tech{
+        max-height: 40px;
+        height: 100%;
+        margin-bottom: 50px;
+    }
+
+    .tech>img{
+        max-width: 60px;
+        width: 100%;
+    }
+    
+    #bt{   
+        font-size: 0%;
+        height: fit-content;
+        margin-bottom: 50px;
+
+    }
+
+    .pic>img {
+        width: 100%;
+        margin: auto;
+    } 
+    
+    .links a {
+        margin-right: 20px;
+    }
+    .credit>p{
+        font-size: 10px;   
+    }
+
+
 }
