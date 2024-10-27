@@ -119,7 +119,7 @@ button>img {
 @media (max-width: 768px) {
 
     html {
-        overflow: hidden;
+        overflow-x: hidden;
         margin: 0;
         height: 100%;
     }
@@ -146,6 +146,7 @@ button>img {
         margin-right: 140px;
         margin-bottom: 20px;
         align-items: center;
+  
     }
 
 
@@ -203,10 +204,14 @@ button>img {
     }
 
     .social-bottom {
+        position: absolute;
         display: flex;
         justify-content: space-evenly;
         width: 100%;
         left: 0;
+        bottom: -180px;
+
+
     }
 
     .bottom {
