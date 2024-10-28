@@ -204,7 +204,6 @@ button>img {
     }
 
     .social-bottom {
-        position: absolute;
         display: flex;
         justify-content: space-evenly;
         width: 100%;
@@ -223,7 +222,7 @@ button>img {
     }
 }
 
-@media (min-height: 555px){
+@media (min-height: 952px){
 
     .bottom { 
         position: fixed;
