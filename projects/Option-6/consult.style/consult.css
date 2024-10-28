@@ -222,7 +222,7 @@ button>img {
     }
 }
 
-@media (min-height: 952px){
+@media (max-height: 952px){
 
     .bottom { 
         position: fixed;
