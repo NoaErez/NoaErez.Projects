@@ -1,0 +1,59 @@
+body{
+    background-image: url(../photos/giphy2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Pixelify Sans";
+    text-align: center;
+}
+
+#header{
+    display: inline-flex;
+    white-space: nowrap;
+    color: rgb(118, 111, 111);
+    text-decoration: overline;
+    font-size: 80px;
+}
+
+#header span /*מתייחס לכל אות בספאן*/{
+    display: inline-block; /*מכניס כל ספאן לבוקס בכדי לתת עיצוב*/
+    animation: wave 1s infinite ease-in-out;
+  }
+  
+  @keyframes wave {
+    0%, 1000% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+
+  @keyframes transformEffect {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+  }
+
+  .en,
+  .ar,
+  .ir,
+  .cb{
+   animation: transformEffect 2s ease-out;
+   font-size: 20px;  
+  }
+
+#name,
+h2,
+img{
+transition: all 0.5s ease;
+}
+    
+
+#name:hover,
+h2:hover,
+img:hover{
+    transform: scale(1.3) 
+}

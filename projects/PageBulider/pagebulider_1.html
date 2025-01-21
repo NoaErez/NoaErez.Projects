@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Bulider</title>
+    <script src="./script/pb.js" defer></script>
+    <link rel="stylesheet" href="./style/pb.css">
+</head>
+
+<body>
+    <h1>Create your own WebPage!</h1>
+
+    <div id="container">
+    </div>
+
+    <div id="elements">
+        <br>
+        <button onclick="userpage()">Create New Page</button>
+    <br><br>
+        <p>Pick a Background Color</p>
+        <input type="color" id="bg-color" value="#f2f2f2" oninput="userpage()">
+        <br>
+        <p>Set Height & Width</p>
+        <input type="text" id="bg-height" oninput="userpage()" placeholder="Height in pixels"
+            style="text-align: center;">
+        <br>
+        <input type="text" id="bg-width" oninput="userpage()" placeholder="Width in pixels" style="text-align: center;">
+        <br>
+        <p>Add Text</p>
+        <input type="text" id="bg-text" oninput="userpage()" placeholder="text" style="text-align: center;">
+        <br>
+        <p>Set Text Color & Size</p>
+        <input type="color" id="txt-color" oninput="userpage()">
+        <br>
+        <input type="text" id="txt-size" oninput="userpage()" placeholder="Size in pixels" style="text-align: center;">
+        <br>
+        <p>Border Settings</p>
+        <select id="B-style" onchange="userpage()">
+            <option value="solid">Solid</option>
+            <option value="dashed">Dashed</option>
+            <option value="dotted">Dotted</option>
+            <option value="double">Double</option>
+            <option value="groove">Groove</option>
+            <option value="hidden">Hidden</option>
+            <option value="inherit">Inherit</option>
+            <option value="initial">Initial</option>
+            <option value="inset">Inset</option>
+            <option value="outset">Outset</option>
+            <option value="ridge">Ridge</option>
+        </select>
+        <br>
+        <input type="text" id="B-thick" oninput="userpage()" placeholder="Border thickness in px"
+            style="text-align: center;">
+        <br>
+        <input type="color" id="B-color" oninput="userpage()">
+        <br>
+        <p>Margin & Padding</p>
+        <input type="text" id="bg-margin" oninput="userpage()" placeholder="Margin in pixels"
+            style="text-align: center;">
+        <br>
+        <input type="text" id="bg-padding" oninput="userpage()" placeholder="Padding in pixels"
+            style="text-align: center;">
+        <br>
+        <p>Radius</p>
+        <input type="text" id="radius" oninput="userpage()" placeholder="radius in pixels" style="text-align: center;">
+        <br>
+    </div>
+
+
+
+</body>
+
+</html>
