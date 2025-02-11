@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: rgb(220, 193, 202);
+}
+
+h1{
+    color: rgb(226, 97, 144);
+    font-size: 3rem;
+
+}
+
+p{
+    color: rgb(174, 17, 74);
+    font-size: 1rem;  
+    margin-top: -1rem;
+    margin-bottom: 5rem;
+}
+
+.choices{
+    margin-right: 5rem;
+}
+
+.choices button{
+    background-color: rgb(227, 137, 170);
+    color: rgb(174, 17, 74);
+    border-width: 0px;
+    border-radius: 100px;
+    margin: 0 30px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 7px 9px
+    
+}
+
+#wrongAnswer{
+    position: fixed;
+}
