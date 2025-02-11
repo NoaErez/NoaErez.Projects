@@ -79,10 +79,9 @@ checkAnswer = (questions, answer) => { //מקבלת את השאלה (questions) 
 
     if (parseFloat(questions) === parseFloat(answer)) { //בודקת אם התשובה של המשתמש נכונה באמצעות השוואת ערכים (parseFloat כדי להשוות מספרים).
         score++;
-        alert("Good Job!");
+        console.log("Good Job!");
     } else {
-        alert("Wrong answer..");
-        console.log(`The correct answer is ${answer}`);
+        console.log(`Wrong.. The correct answer is ${answer}`);
     };
 
      // עדכון הניקוד והמשך לשאלה הבאה

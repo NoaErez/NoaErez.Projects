@@ -48,25 +48,32 @@ const generateCard = (country) => {
     const cardFooter = document.createElement('div');
     cardFooter.className = "card-footer d-flex justify-content-center mb-2";
 
-    // create a heart icon, style it
+    // create heart icon
     let heartIcon = document.createElement('i');
     heartIcon.className = "fa fa-heart text-dark";
 
-    heartIcon.addEventListener('click', () => {
-        heartIcon.classList.toggle('text-danger');
-        heartIcon.classList.toggle('text-dark');
+    // create heart keyname to seprate countries
+    const heartKey = `heartLiked_${country.name.common}`;
 
-        // if(heartIcon.classList.contains('text-dark')){
-        //     heartIcon.classList.remove('text-dark');
-        //     heartIcon.classList.add('text-danger');
-        // } else {
-        //     heartIcon.classList.remove('text-danger');
-        //     heartIcon.classList.add('text-dark');
-        // }
+    // check if country was marked before
+    const isLiked = localStorage.getItem(heartKey);
+    if (isLiked === 'true') {
+        heartIcon.classList.add('text-danger'); 
+        heartIcon.classList.remove('text-dark');
+    }
+
+    // changing status
+    heartIcon.addEventListener('click', () => {
+        const isNowLiked = heartIcon.classList.toggle('text-danger'); 
+        heartIcon.classList.toggle('text-dark', !isNowLiked); 
+
+        // save in LocalStorage
+        localStorage.setItem(heartKey, isNowLiked);
     });
 
-    // add the heart icon to the card footer
+    // add heart icon to card
     cardFooter.appendChild(heartIcon);
+
 
     // add the card title, population and region to the card body
     cardBody.appendChild(cardTitle);

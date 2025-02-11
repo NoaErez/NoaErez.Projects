@@ -17,27 +17,29 @@
 
     <div id="elements">
         <br>
-        <button onclick="userpage()">Create New Page</button>
-    <br><br>
+        <button onclick="userPage()">Start</button>
+        <br>
+        <button onclick="clearPage()">Clear Page</button>
+        <br><br>
         <p>Pick a Background Color</p>
-        <input type="color" id="bg-color" value="#f2f2f2" oninput="userpage()">
+        <input type="color" id="bg-color" value="#f2f2f2" oninput="userPage()">
         <br>
         <p>Set Height & Width</p>
-        <input type="text" id="bg-height" oninput="userpage()" placeholder="Height in pixels"
+        <input type="text" id="bg-height" oninput="userPage()" placeholder="Height in pixels"
             style="text-align: center;">
         <br>
-        <input type="text" id="bg-width" oninput="userpage()" placeholder="Width in pixels" style="text-align: center;">
+        <input type="text" id="bg-width" oninput="userPage()" placeholder="Width in pixels" style="text-align: center;">
         <br>
         <p>Add Text</p>
-        <input type="text" id="bg-text" oninput="userpage()" placeholder="text" style="text-align: center;">
+        <input type="text" id="bg-text" oninput="userPage()" placeholder="text" style="text-align: center;">
         <br>
         <p>Set Text Color & Size</p>
-        <input type="color" id="txt-color" oninput="userpage()">
+        <input type="color" id="txt-color" oninput="userPage()">
         <br>
-        <input type="text" id="txt-size" oninput="userpage()" placeholder="Size in pixels" style="text-align: center;">
+        <input type="text" id="txt-size" oninput="userPage()" placeholder="Size in pixels" style="text-align: center;">
         <br>
         <p>Border Settings</p>
-        <select id="B-style" onchange="userpage()">
+        <select id="B-style" onchange="userPage()">
             <option value="solid">Solid</option>
             <option value="dashed">Dashed</option>
             <option value="dotted">Dotted</option>
@@ -51,20 +53,20 @@
             <option value="ridge">Ridge</option>
         </select>
         <br>
-        <input type="text" id="B-thick" oninput="userpage()" placeholder="Border thickness in px"
+        <input type="text" id="B-thick" oninput="userPage()" placeholder="Border thickness in px"
             style="text-align: center;">
         <br>
-        <input type="color" id="B-color" oninput="userpage()">
+        <input type="color" id="B-color" oninput="userPage()">
         <br>
         <p>Margin & Padding</p>
-        <input type="text" id="bg-margin" oninput="userpage()" placeholder="Margin in pixels"
+        <input type="text" id="bg-margin" oninput="userPage()" placeholder="Margin in pixels"
             style="text-align: center;">
         <br>
-        <input type="text" id="bg-padding" oninput="userpage()" placeholder="Padding in pixels"
+        <input type="text" id="bg-padding" oninput="userPage()" placeholder="Padding in pixels"
             style="text-align: center;">
         <br>
         <p>Radius</p>
-        <input type="text" id="radius" oninput="userpage()" placeholder="radius in pixels" style="text-align: center;">
+        <input type="text" id="radius" oninput="userPage()" placeholder="radius in pixels" style="text-align: center;">
         <br>
     </div>
 
