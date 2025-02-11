@@ -9,7 +9,7 @@ body {
     align-items: center;
     text-align: center;
     height: 100vh;
-    background-color: rgb(220, 193, 202);
+    background-color: rgb(255, 194, 238);
 }
 
 h1{
@@ -30,7 +30,7 @@ p{
 }
 
 .choices button{
-    background-color: rgb(255, 150, 208);
+    background-color: rgb(249, 165, 196);
     color: rgb(174, 17, 74);
     border-width: 0px;
     border-radius: 100px;
