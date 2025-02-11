@@ -12,7 +12,7 @@ function tryMe() {
         "Is asking *me* gonna make you feel better?",
         "JUST ANSWER ALREADY"
     ];
-    const randomNotes = Math.floor(Math.random() * 4);
+    const randomNotes = Math.floor(Math.random() * notes.length);
     p.textContent = notes[randomNotes];
 }
 
