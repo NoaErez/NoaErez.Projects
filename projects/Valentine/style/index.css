@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Pixelify Sans', sans-serif;
     font-weight: bold;
     margin: 0;
     overflow: hidden;
@@ -9,40 +9,79 @@ body {
     align-items: center;
     text-align: center;
     height: 100vh;
-    background-color: rgb(255, 194, 238);
+    background-color: rgb(255, 217, 236);
+    background-image: url(../images/hart-heart.gif);
+    background-size: 500px;
+
 }
 
-h1{
+.container {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: fadeInTranslateY 1s ease-in forwards;
+
+}
+
+@keyframes fadeInTranslateY {
+    from{
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container2 {
+    opacity: 0;
+    transform: scale(0.4px);
+    animation: scale 0.5s ease-in forwards;
+
+}
+
+@keyframes scale {
+    from{
+        opacity: 0;
+        transform: scale(0.4);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+h1 {
     color: rgb(226, 97, 144);
-    font-size: 3rem;
+    font-size: 4rem;
 
 }
 
-p{
+p {
     color: rgb(174, 17, 74);
-    font-size: 1rem;  
+    font-size: 2rem;
     margin-top: -1rem;
     margin-bottom: 5rem;
 }
 
-.choices{
+.choices {
     margin-right: 5rem;
 }
 
-.choices button{
+.choices button {
     background-color: rgb(249, 165, 196);
     color: rgb(174, 17, 74);
     border-width: 0px;
     border-radius: 100px;
     margin: 0 30px;
     cursor: pointer;
-    font-family: Arial, sans-serif;
+    font-family: 'Pixelify Sans', sans-serif;
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 7px 9px
-    
 }
 
-#wrongAnswer{
+#wrongAnswer {
     position: fixed;
 }
+
