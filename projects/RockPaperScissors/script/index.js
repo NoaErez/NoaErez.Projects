@@ -1,4 +1,4 @@
-// R P C 
+// R P S
 const choices = ["rock", "paper", "scissors"];
 const playerDisplay = document.getElementById("playerDisplay");
 const pcDisplay = document.getElementById("pcDisplay");
@@ -10,14 +10,18 @@ let pcScore = 0;
 let turn = 1;
 
 
-const randomNumbers = () => {
-    if (turn > 10) {
-        alert("Game Over!");
-        return;
-        
-    };
-
 function playGame(playerChoice) {
+    if (turn > 10) {
+        let winner = playerScore > pcScore ? "YOU WIN THE GAME!" : 
+        playerScore < pcScore ? "COMPUTER WINS THE GAME!" : "IT'S A TIE!";
+
+        winnerName.textContent = winner;
+        endGame.textContent = "GAME OVER"; 
+        endGame.classList.add("orangeText");
+        
+
+        return;
+    }
 
     const pcChoice = choices[Math.floor(Math.random() * 3)];
     let result = "";
@@ -27,13 +31,13 @@ function playGame(playerChoice) {
     } else {
         switch (playerChoice) {
             case "rock":
-                result = (pcChoice === "scissors") ? "YOU WIN!" : "YOU LOSE!";
+                result = (pcChoice === "scissors") ? "WINNER!" : "LOSER!";
                 break;
             case "paper":
-                result = (pcChoice === "rock") ? "YOU WIN!" : "YOU LOSE!";
+                result = (pcChoice === "rock") ? "WINNER!" : "LOSER!";
                 break;
             case "scissors":
-                result = (pcChoice === "paper") ? "YOU WIN!" : "YOU LOSE!";
+                result = (pcChoice === "paper") ? "WINNER!" : "LOSER!";
                 break;
         }
     }
@@ -45,16 +49,23 @@ function playGame(playerChoice) {
     resultDisplay.classList.remove("greenText", "redText");
 
     switch (result) {
-        case "YOU WIN!":
+        case "WINNER!":
             resultDisplay.classList.add("greenText");
             playerScore++;
-            playerScoreDisplay.textContent = playerScore
+            playerScoreDisplay.textContent = playerScore;
             break;
-        case "YOU LOSE!":
+        case "LOSER!":
             resultDisplay.classList.add("redText");
             pcScore++;
             pcScoreDisplay.textContent = pcScore;
             break;
     }
+
+    turn++;
+    
+    document.getElementById("restartGame").addEventListener("click", function() {
+        location.reload();
+    });
 }
+
 

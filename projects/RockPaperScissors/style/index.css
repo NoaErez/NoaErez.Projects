@@ -23,7 +23,7 @@ h1 {
     border-radius: 50px;
     background-color: rgb(92, 126, 114);
     cursor: pointer; 
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .choices button:hover {
@@ -31,8 +31,24 @@ h1 {
     background-color:rgb(153, 216, 195);
 }
 
+#restartGame {
+    font-size: 1.5rem;
+    min-width: 160px;
+    margin: 0 10px;
+    border-radius: 50px;
+    background-color: rgb(92, 126, 114);
+    cursor: pointer; 
+    transition: 0.3s ease-in-out;
+}
+
+#restartGame:hover {
+    transform: scale(1.1);
+    background-color:rgb(153, 216, 195);
+}
+
 #playerDisplay,
-#pcDisplay{
+#pcDisplay,
+#winner{
     font-size: 2rem;
 }
 
@@ -41,14 +57,24 @@ h1 {
     margin-top: 20px;
 }
 
+#endGame{
+    font-size: 5.5rem;
+    margin-top: 20px;
+}
+
 .greenText{
-    color:rgb(7, 197, 7);
+    color:rgb(28, 134, 28);
 }
 
 .redText{
-    color:red;
+    color:rgb(179, 15, 15);
 }
 
-.scoreDisplay{
+.orangeText{
+    color: rgb(255, 150, 22);;
+}
+
+.scoreDisplay,
+.winnerDisplay{
     font-size: 1.4rem; 
 }
