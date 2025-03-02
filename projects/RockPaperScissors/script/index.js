@@ -7,6 +7,15 @@ const playerScoreDisplay = document.getElementById("playerScoreDisplay");
 const pcScoreDisplay = document.getElementById("pcScoreDisplay");
 let playerScore = 0;
 let pcScore = 0;
+let turn = 1;
+
+
+const randomNumbers = () => {
+    if (turn > 10) {
+        alert("Game Over!");
+        return;
+        
+    };
 
 function playGame(playerChoice) {
 
