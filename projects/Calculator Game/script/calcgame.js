@@ -14,30 +14,33 @@ startgame = () => {
 };
 
 newgame = () => {
-    turn = 0; 
-    score = 0; 
+    turn = 0;
+    score = 0;
     const scoreElement = document.getElementById("score");
-    scoreElement.innerText = `Score: ${score}`; 
+    scoreElement.innerText = `Score: ${score}`;
     const questionElement = document.getElementById("question");
-    questionElement.innerText = ""; 
+    questionElement.innerText = "";
     const answerButtons = document.getElementById("buttons");
     answerButtons.innerHTML = "";
 
+    endGame.innerText = "";
     startgame(); // התחלת משחק חדש
+
 };
 
 const randomNumbers = () => {
     if (turn > 10) {
-        alert("Game Over!");
+        endGame.textContent = "GAME OVER";
+        endGame.classList.add("orangeText");
         return;
-        
+
     };
 
     let operators = ["+", "-", "*", "/"];
     let rolloperator = Math.floor(Math.random() * operators.length);
     const operator = operators[rolloperator]
-    num1 = Math.floor(Math.random() * 11);
-    num2 = Math.floor(Math.random() * 11);
+    num1 = Math.floor(Math.random() * 31);
+    num2 = Math.floor(Math.random() * 31);
     let answer = equation(num1, num2, operator); // חישוב התוצאה לפי המפעיל והמספרים
     let questions = `${num1} ${operator} ${num2}`; // ביטוי לשאלה שנוצרת
     console.log(questions); // הדפסת השאלה
@@ -59,9 +62,12 @@ UserAnswer = (questions, answer) => {
 
     const answers = [answer];  // יצירת תשובות (תשובה נכונה ועוד 3 תשובות שגויות)
     while (answers.length < 4) {
-        const randomAnswer = Math.floor(Math.random() * 21); // יוצר מספר אקראי בין 0 ל-20
+        let randomAnswer = Math.floor(Math.random() * 31); // יוצר מספר אקראי שלם בין 0 ל-30
         answers.push(randomAnswer);
     };
+
+
+
     // ערבוב התשובות
     answers.sort(() => Math.random() - 0.5);
     // יצירת כפתורים
@@ -84,30 +90,34 @@ checkAnswer = (questions, answer) => { //מקבלת את השאלה (questions) 
         console.log(`Wrong.. The correct answer is ${answer}`);
     };
 
-     // עדכון הניקוד והמשך לשאלה הבאה
-     startgame();
+    // עדכון הניקוד והמשך לשאלה הבאה
+    startgame();
 };
 
 
 
 equation = (num1, num2, operator) => {
+    let result;
     switch (operator) {
         case "+":
-            return num1 + num2;
-
+            result = num1 + num2;
+            break;
 
         case "-":
-            return num1 - num2;
-
+            result = num1 - num2;
+            break;
 
         case "*":
-            return num1 * num2;
-
+            result = num1 * num2;
+            break;
 
         case "/":
-            return num1 / num2;
+            result = num1 / num2;
+            result = Math.floor(result);
+            break;
+    }
+    return result;
 
-    };
 };
 
 
