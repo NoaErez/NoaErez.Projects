@@ -44,7 +44,7 @@ correctAnswer.addEventListener("click", function () {
     h1.classList.add("container2");
     h1.style.fontSize = "7rem" 
     
-    // יצירת אלמנט ה-IMG עם האנימציה
+    
     yes.innerHTML = `
     <h2 class="container2" style="color: rgb(174, 17, 74); font-size: 1rem;">I knew it hehe</h2> 
     <img src="./images/peach-goma-love.gif" alt="Exciting GIF!" width="300" class="container2">

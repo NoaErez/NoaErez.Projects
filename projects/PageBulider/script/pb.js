@@ -3,7 +3,7 @@ const updateEmbedCode = () => {
     const container = document.getElementById('container');
     const embedCode = document.getElementById('embedCode');
 
-    embedCode.value = container.innerHTML; // מעדכן את הטקסט עם הקוד שנוצר
+    embedCode.value = container.innerHTML; // מעדכן את הטקסט עם הקוד 
 };
 
 const userPage = () => {
@@ -42,15 +42,14 @@ const userPage = () => {
     container.innerHTML = '';
     container.appendChild(blankpage);
 
-    updateEmbedCode(); // מעדכן את הקוד ב-Embed
+    updateEmbedCode(); 
 };   
 
 const clearPage = () => {
-    // מנקה את ה-container
     const container = document.getElementById('container');
     container.innerHTML = '';  
 
-    // מאפס את כל הערכים בשדות הקלט
+    // מאפס ערכים  
     document.getElementById('bg-color').value = "#f2f2f2";
     document.getElementById('bg-height').value = '';
     document.getElementById('bg-width').value = '';
