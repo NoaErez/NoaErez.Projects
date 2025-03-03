@@ -1,5 +1,12 @@
 
-const userpage = () => {
+const updateEmbedCode = () => {
+    const container = document.getElementById('container');
+    const embedCode = document.getElementById('embedCode');
+
+    embedCode.value = container.innerHTML; // מעדכן את הטקסט עם הקוד שנוצר
+};
+
+const userPage = () => {
     const blankpage = document.createElement('div');
     blankpage.id = "blankpage";
 
@@ -30,17 +37,39 @@ const userpage = () => {
     blankpage.style.borderRadius = (radius) ? `${radius}px` : "0px";
     blankpage.style.border = (bthick || bstyle || bcolor) ? `${bthick ? `${bthick}px` : "1px"} ${bstyle || "solid"} ${bcolor || "black"}` : "1px solid black";
 
- 
+
     const container = document.getElementById('container');
     container.innerHTML = '';
     container.appendChild(blankpage);
 
-    
-};
+    updateEmbedCode(); // מעדכן את הקוד ב-Embed
+};   
 
 const clearPage = () => {
+    // מנקה את ה-container
     const container = document.getElementById('container');
     container.innerHTML = '';  
+
+    // מאפס את כל הערכים בשדות הקלט
+    document.getElementById('bg-color').value = "#f2f2f2";
+    document.getElementById('bg-height').value = '';
+    document.getElementById('bg-width').value = '';
+    document.getElementById('bg-text').value = '';
+    document.getElementById('txt-color').value = '#000000';
+    document.getElementById('txt-size').value = '';
+    document.getElementById('B-style').value = 'solid';
+    document.getElementById('B-thick').value = '';
+    document.getElementById('B-color').value = '#000000';
+    document.getElementById('bg-margin').value = '';
+    document.getElementById('bg-padding').value = '';
+    document.getElementById('radius').value = '';
 };
-//יצירת כפתור שמור וצור
+
+
+
+
+ 
+
+
+
 

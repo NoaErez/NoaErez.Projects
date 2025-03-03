@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     font-weight: bold;
     margin: 0;
+    background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
     align-items: center;

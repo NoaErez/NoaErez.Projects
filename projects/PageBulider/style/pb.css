@@ -1,47 +1,96 @@
 body {
-background-color: bisque;
-overflow-y: auto; 
+    background-color: bisque;
+    font-family: "Exo 2", serif;
+    font-optical-sizing: auto;
 }
 
-h1{
+h1 {
     text-align: center;
     margin-right: 10%;
 }
 
-button{
+button {
     background-color: bisque;
     color: gray;
     border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0px 1px black;
-    transition: transform 0.1s ease; 
+    transition: transform 0.1s ease;
 }
 
 button:active {
     transform: scale(0.99);
 }
 
-#container{
-    background-color: white; 
-    border: 1px solid gray; 
-    width: 80vw; 
-    height: 100vh; 
+#container {
+    background-color: white;
+    border: 1px solid gray;
+    width: 100vw;
+    height: 100vh;
     margin-left: 40px;
 }
 
 #elements {
-    background-color: rgb(240, 154, 62); 
-    color: white; 
-    width: 200px; 
-    height: 100vh; 
+    background-color: rgb(240, 154, 62);
+    color: white;
+    width: 15vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    padding: 5px; 
-    position: fixed; 
-    top: 0; 
-    right: 0; 
-    overflow-y: auto; 
+    align-items: center;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
 }
 
+#embedCode {
+    width: 90%;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: black;
+    background: white;
+    border: 1px solid gray;
+    padding: 50px;
+    margin: auto;
+
+}
+
+@media (max-width: 720px) {
+
+    body {
+        background-color: bisque;
+        overflow-y: auto;
+    }
+
+    h1,
+    p {
+        text-align: center;
+        margin: auto;
+
+    }
+
+    #elements {
+        display: flex;
+        font-size: 0.8em;
+    }
+
+    #embedCode {
+        width: 50%;
+        margin-top: 5px;
+        padding: 20px;
+    
+    }
+    
+
+    button,
+    input,
+    select {
+        font-size: 0.8em;
+        width: 80%;
+        align-items: center;
+        margin: auto;
+    }
+}
