@@ -25,6 +25,7 @@ This project is designed as a single-page portfolio website, structured with HTM
 - **CSS**: Custom styling and animations.
 - **Bootstrap 5**: Layout and responsive components.
 - **Fonts**: Uses Google Font - Varela Round for a cohesive style.
+- **JavaScript**: Used to create small applications in the gallery section
 
 ## Setup and Usage
 
