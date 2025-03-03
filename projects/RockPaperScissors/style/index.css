@@ -61,6 +61,7 @@ h1 {
 #endGame{
     font-size: 5.5rem;
     margin-top: 20px;
+    margin: auto;
 }
 
 .greenText{
@@ -78,4 +79,31 @@ h1 {
 .scoreDisplay,
 .winnerDisplay{
     font-size: 1.4rem; 
+    
+}
+
+@media (max-width: 480px) {
+
+    body{
+        font-size: 50%;
+        text-align: center;
+    }
+
+  .choices button {
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        width: 0.5em;
+        margin-top: 1rem;
+
+    }
+
+    h1 {
+       text-align: center;
+    }
+    
+
+    #endGame{
+        font-size: 550%;
+    }
 }
